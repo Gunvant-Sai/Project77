@@ -1,0 +1,74 @@
+<html>
+  
+<head>
+    <title>
+        My App
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Project On Console</h1>
+     
+        <br>
+        <p>
+          Write about visual studio and how to set it up  
+        </p>
+        <p>
+            Write about console screen.And why it is use.And how to open console screen and how to print anything on console
+        </p>
+
+        <script>
+
+    //How to declare the arrays ? the id to be refer for innerHTML is declaration_of_arrays
+    var names = ["Gunvant","Sai","B.V"];
+    console.log(names);
+    document.getElementById("declaration_of_arrays").innerHTML = name;
+
+    //How to fetch the first element of the array ? the id to be refer for innerHTML is access_first_element
+    var first_names = names[0];
+    console.log(first_names);
+    document.getElementById("access_first_element").innerHTML = first_names;
+
+    //How to fetch the second element of the array ? the id to be refer for innerHTML is access_second_element
+    var second_names = names[1];
+    console.log(second_names);
+    document.getElementById("access_second_element").innerHTML = second_names;
+
+    //How to fetch the third element of the array ? the id to be refer for innerHTML is access_third_element
+    var third_names = fruits[2];
+    console.log(third_names);
+    document.getElementById("access_third_element").innerHTML = thirdfruits;
+
+    //How to loop the array ? the id to be refer for innerHTML is loop_the_array
+    var loopnames = "";
+    for (i = 0; i < names.length; i++) {
+        console.log(names[i]);
+        loopnames = loopnames + names[i] + "<br>";
+    }
+    document.getElementById("loop_the_array").innerHTML = loopnames;
+
+    //adding element at the end of the array using push method
+    //How to add element at the end of the array ? the id to be refer for innerHTML is add_element_at_the_end_of_array
+    fruits.push("Reddy");
+    console.log(names);
+    document.getElementById("add_element_at_the_end_of_array").innerHTML = names;
+
+    //How to declare array with numbers ? the id to be refer for innerHTML is display_number_array
+    var numbers = ["20","12","3","45","48"];
+    console.log(numbers);
+    document.getElementById("display_number_array").innerHTML = numbers;
+
+    //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is display_maximum_number
+    var maximum_number = Math.max.apply(Math, numbers);
+    console.log(maximum_number); 
+    document.getElementById("display_maximum_number").innerHTML = maximum_number;
+
+    //How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is display_minimum_number
+    var minimum_number = Math.min.apply(Math, numbers);
+    console.log(minimum_number); 
+    document.getElementById("display_minimum_number").innerHTML = minimum_number;
+        </script>
+</body>
+
+</html>
